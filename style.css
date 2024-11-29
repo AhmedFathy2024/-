@@ -1,0 +1,395 @@
+/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+
+}
+
+header{
+    height:100vh;
+    background-image: url(img/banner_bg01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-radius: 0 0 30px 30px; 
+} 
+
+#navbar{
+    background-color:rgba(0, 0, 0, 0.703);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;   
+    backdrop-filter: blur(30%);   /* عشان يكون شفاف  */
+    box-shadow: 2px 2px 3px #333 ;
+    
+}
+
+
+#navbar #nav-left a{
+    margin-left: 100px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+#navbar #nav-center a{
+    margin-left: 25px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    transition:0.4s ease;
+
+}
+
+#navbar #nav-center a:hover{
+    color:yellow ;
+    
+} 
+
+#navbar #nav-right{
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navbar #nav-right span{
+    color:#fff;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+#navbar #nav-right span:hover{
+    cursor: pointer;
+    color: orange;
+}
+
+#navbar #select{
+    background: none;
+    color:orange;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    outline-style: none;
+    margin-right: 15px; 
+
+}
+
+#navbar button {
+    background: none;
+    border: none;
+    background-color: orangered;
+    outline-style: none;
+    padding: 3px 15px;
+    border-radius: 50px;
+}
+#navbar button {
+    color:#fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#navbar button:hover{
+    color:rgb(88, 80, 80);
+    background-color:#e5e216;
+    cursor: pointer;
+
+}
+
+header #content{
+    text-align: center;
+    padding-top: 250px ;
+    padding-left: 50px;
+}
+
+header #content h2{
+    color: #e5e216;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px red;
+}
+header #content h1{
+    color:#fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+header #content button{
+    align-items: center;
+    border: none;
+    padding: 5px 30px;
+    outline-style: none;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header #content button:hover{
+    background-color:#e5e216 ;
+    color:rgb(88, 80, 80);
+    transition: 0.4s;
+    cursor: pointer;
+}
+/* **************** بداية سكشن الافلام************* */
+
+#section-2 #title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+#section-2 #title #title-left{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+#section-2 #title #title-left button{
+    font-size: 20px;
+    font-weight: 700;
+    border:none;
+    color:#fff ;
+    padding: 5px 20px;
+    background-color: orangered;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    
+}
+
+#section-2 #title #title-left button:hover{
+    background-color:#e5e216 ;
+    color:rgb(88, 80, 80);
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+#section-2 #title #title-right{
+    margin-right: 60px;
+    margin-top: 30px;
+
+}
+
+#section-2 #title #title-right h2{
+    font-size: 25px; 
+    font-weight: 700;
+    color: purple;
+}
+
+section #card {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:  wrap;
+    padding-bottom: 30px;
+    margin: 30px 10px;
+
+    
+
+}
+
+section #card img{
+    width: 300px;
+    height: 400px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 3px #333 
+     
+}
+
+section #card img:hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.303);
+}
+
+/* **************بداية سكشن المسلسلات************** */
+
+#section-3 #title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+#section-3 #title #title-left{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+#section-3 #title #title-left button{
+    font-size: 20px;
+    font-weight: 700;
+    border:none;
+    color:#fff ;
+    padding: 5px 20px;
+    background-color: orangered;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    
+}
+
+#section-3 #title #title-left button:hover{
+    background-color:#e5e216 ;
+    color:rgb(88, 80, 80);
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+#section-3 #title #title-right{
+    margin-right: 60px;
+    margin-top: 30px;
+
+}
+
+#section-3 #title #title-right h2{
+    font-size: 25px; 
+    font-weight: 700;
+    color: purple;
+}
+
+section #card {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:  wrap;
+    padding-bottom: 30px;
+    margin: 30px 10px;
+
+    
+
+}
+
+section #card img{
+    width: 300px;
+    height: 400px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 3px #333 
+     
+}
+
+section #card img:hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.303);
+}
+
+/* ------------------------------------------ */
+
+
+#contect{
+    margin-right: 50px;
+    direction: rtl;
+    background-color: #f4f4f4;
+
+}
+
+#contect .container{
+    max-width: 900px;
+}
+
+#contect .contect-data{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#contect .contect-data .contect-info{
+    width: 50%;
+}
+
+#contect .contect-data .contect-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+#contect .contect-data .contect-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+
+#contect .contect-data .contect-info p{
+    letter-spacing: 1px;
+    color: #9a9a9a;
+}
+
+#contect .contect-data .contect-info i{
+    color: #e4b95b;
+    margin-right: 5px;
+}
+
+#contect .contect-data .contect-info a i{
+    color: #fff;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#contect .contect-data .contect-info a i:hover{
+    background-color: #e4b95b;
+    color: #383848;
+}
+
+form{
+    width: 50%;
+
+}
+
+form input , textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 10px 0;
+    border: none;
+    background-color: #e3e2dd;
+}
+
+#contect .btn{
+    padding: 5px 25px;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 50px;
+}
+
+#contect .btn:hover{
+    background-color: #383848;
+    cursor: pointer;
+}
+
+/* Contect End */
+
+/* Footer Start */
+
+#footer{
+    margin-top: 20px;
+    background-color: #383848;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
